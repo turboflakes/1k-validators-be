@@ -143,6 +143,7 @@ workflows:
               only: /v[0-9]+(\.[0-9]+)*/
           requires:
             - integrationTests
+            - publishImage
       - deploy:
           context: digital_ocean_access
           filters:
